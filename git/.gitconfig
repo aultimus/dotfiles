@@ -1,0 +1,12 @@
+[user]
+	email = matthew.ault@gmail.com
+	name = Matthew Ault
+	signingkey = 11D9A522E3D0CC9E
+[commit]
+	gpgsign = true
+[alias]
+	co = checkout
+	unstage = reset HEAD --
+	branch-recent = branch --sort=-committerdate
+[push]
+	default = current
