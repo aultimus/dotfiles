@@ -129,7 +129,7 @@ export PATH=$PATH:$HOME/bin
 
 alias st='subl'
 
-eval "$(gimme 1.21.1)"
+eval "$(gvm 1.21.1)"
 
 alias openvpn-start='openvpn3 session-start --config ~/.ecobee.ovpn'
 alias openvpn-stop='openvpn3 session-manage --config=/home/aulty/.ecobee.ovpn --disconnect'
