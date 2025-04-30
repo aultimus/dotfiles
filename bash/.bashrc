@@ -163,3 +163,11 @@ export NVM_DIR="$HOME/.nvm"
 # SKIP=mypy
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
+
+# --- pyenv ---
+eval "$(pyenv virtualenv-init -)"
+# --- pyenv ---
+
+# --- direnv ---
+eval "$(direnv hook bash)"
+# --- direnv ---
