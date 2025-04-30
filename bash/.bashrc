@@ -129,8 +129,6 @@ export PATH=$PATH:$HOME/bin
 
 alias st='subl'
 
-eval "$(gvm 1.21.1)"
-
 alias openvpn-start='openvpn3 session-start --config ~/.ecobee.ovpn'
 alias openvpn-stop='openvpn3 session-manage --config=/home/aulty/.ecobee.ovpn --disconnect'
 
@@ -171,3 +169,14 @@ eval "$(pyenv virtualenv-init -)"
 # --- direnv ---
 eval "$(direnv hook bash)"
 # --- direnv ---
+
+# --- go env
+export PATH=/usr/local/go/bin:$PATH
+# goenv configuration, mkdir $HOME/.local if it doesn't exist
+export GOENV_INSTALL_DIR="$HOME/.local/goenv"
+export GOENV_ROOT_DIR="$HOME/.local/go"
+export PATH="$GOENV_ROOT_DIR/bin:$PATH"
+
+go env install 1.22
+go env use 1.22
+# --- go env
