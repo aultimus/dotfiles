@@ -180,3 +180,6 @@ export PATH="$GOENV_ROOT_DIR/bin:$PATH"
 go env install 1.22
 go env use 1.22
 # --- go env
+
+# alias to format json on the commandline
+alias json-pp='python -m json.tool'
